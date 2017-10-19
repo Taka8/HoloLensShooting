@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankShooter : MonoBehaviour {
+public class DroneShooter : MonoBehaviour {
     public float timeOut;
     private float timeElapsed;
-    public TankBullet bullet;
+    public DroneBullet bullet;
    
 	// Use this for initialization
 	void Start () {
