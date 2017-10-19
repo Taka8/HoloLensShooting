@@ -11,7 +11,7 @@ public class Data : MonoBehaviour {
 	void Start () {
         Data.Instance.score = 0;
 	}
-    void AddScore(int score)
+    public void AddScore(int score)
     {
         Data.Instance.score += score;
     }
