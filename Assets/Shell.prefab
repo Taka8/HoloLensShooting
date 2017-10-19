@@ -22,7 +22,9 @@ GameObject:
   - component: {fileID: 33860800278502182}
   - component: {fileID: 23635891814701050}
   - component: {fileID: 54229337236738890}
-  - component: {fileID: 114520003365662662}
+  - component: {fileID: 64813819008933382}
+  - component: {fileID: 114654913463189448}
+  - component: {fileID: 114916329111728540}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -97,7 +99,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114520003365662662
+--- !u!64 &64813819008933382
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409704174280234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3e820aa4ab1557b408dc9abd3d5c5fea, type: 3}
+--- !u!114 &114654913463189448
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,4 +124,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b948e30806ba23942b467e86e48e9a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 10
+  velocity: 6
+  bullet: 10
+--- !u!114 &114916329111728540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409704174280234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d0512aca0887b47aab59b0ddf77139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
