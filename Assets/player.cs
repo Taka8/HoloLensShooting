@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class player : MonoBehaviour
 {
@@ -36,7 +37,8 @@ public class player : MonoBehaviour
     //ゲームオーバー処理
     public void GameOver()
     {
-     Application.LoadLevel(Application.loadedLevel); //シーンの再読み込み
+        // Application.LoadLevel(Application.loadedLevel); //シーンの再読み込み
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
    
     }
     public bool flag = true;    //trueの時体力を表示させる
