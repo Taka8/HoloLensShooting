@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
-    private float score = 10f;
+public class BulletCollision : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerBullet>())
         {
             Destroy(gameObject);
-            GameObject.Find("Score").SendMessage("AddScore", score);
 
         }
-      
+
     }
-
 }
-

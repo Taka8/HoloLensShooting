@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 1891535851}
   - component: {fileID: 1891535850}
   - component: {fileID: 1891535849}
+  - component: {fileID: 1891535853}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -666,3 +667,16 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1891535853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1891535848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd823a4342fda4b46a4d16acb9c18f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 6114525}
+  score: 0

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54229337236738890}
   - component: {fileID: 64813819008933382}
   - component: {fileID: 114654913463189448}
-  - component: {fileID: 114916329111728540}
+  - component: {fileID: 114058777145013000}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -113,6 +113,17 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3e820aa4ab1557b408dc9abd3d5c5fea, type: 3}
+--- !u!114 &114058777145013000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409704174280234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd14423335e52094eb4160215fc33995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114654913463189448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,14 +137,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 6
   bullet: 10
---- !u!114 &114916329111728540
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1409704174280234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8d0512aca0887b47aab59b0ddf77139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
