@@ -9,8 +9,8 @@ public class Enemy : MonoBehaviour {
         if (other.GetComponent<PlayerBullet>())
         {
             Destroy(gameObject);
-            GameObject.Find("Score").SendMessage("AddScore", score);
-
+			Data data = new Data ();
+			data.AddScore ((int)score);
         }
       
     }

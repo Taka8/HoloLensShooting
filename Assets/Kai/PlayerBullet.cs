@@ -18,7 +18,7 @@ public class PlayerBullet : MonoBehaviour
 
     void Update()
     {
-
+        
     }
    
 }

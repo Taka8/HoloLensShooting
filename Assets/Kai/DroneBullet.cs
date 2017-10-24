@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
-public class TankBullet : MonoBehaviour {
+public class DroneBullet : MonoBehaviour {
     public float velocity = 10f;
     public float bullet = 10f;
     // Use this for initialization
@@ -21,6 +21,7 @@ public class TankBullet : MonoBehaviour {
         {
             //プレイヤーと衝突した時
             Player.gameObject.SendMessage("Damage", bullet);
+
         }
       
     }
