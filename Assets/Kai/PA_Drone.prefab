@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 95142622452191102}
   - component: {fileID: 65465292159919558}
   - component: {fileID: 114413978855282192}
-  - component: {fileID: 114083506425613106}
   - component: {fileID: 114173718511616468}
   m_Layer: 0
   m_Name: PA_Drone
@@ -475,7 +474,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.84, y: 0.28, z: 0.81}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95142622452191102
 Animator:
@@ -494,20 +493,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114083506425613106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1277797577166758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd3a33c70a0b6d48a9d7cb1f304ce71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4028781913607228, guid: 41d431a3520dabe4d970c4e6f9a17a9e, type: 2}
-  rotMax: 10
-  score: 10
 --- !u!114 &114173718511616468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -519,6 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0d495b438151c4f8fa308fce2c271c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 4696426456544022, guid: 6a8bfb93474666043a1f3e2ae4dc56b0, type: 2}
 --- !u!114 &114413978855282192
 MonoBehaviour:
   m_ObjectHideFlags: 1
