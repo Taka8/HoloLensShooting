@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -195,7 +195,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4028781913607228, guid: 41d431a3520dabe4d970c4e6f9a17a9e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4028781913607228, guid: 41d431a3520dabe4d970c4e6f9a17a9e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -502,7 +502,7 @@ MonoBehaviour:
   maxEnemy1: 5
   maxEnemy2: 3
   enemy1: {fileID: 114413978855282192, guid: 18c8151da91ba184c9e747b795badc50, type: 2}
-  enemy2: {fileID: 114955662777405254, guid: 2b75f15f3c92c5949a32ac0e03f266c5, type: 2}
+  enemy2: {fileID: 114876568464372942, guid: 95c7139c22b89ac408cfb834d8b975f0, type: 2}
 --- !u!4 &1811561333
 Transform:
   m_ObjectHideFlags: 0
