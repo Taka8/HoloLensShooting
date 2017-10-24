@@ -34,8 +34,7 @@ public class EnemyEmitter : MonoBehaviour
     void EmitEnemies()
     {
 
-        for (int i = 0; i < maxEnemy1; i++)
-        {
+        for (int i = 0; i < maxEnemy1; i++){
            // Vector3 rv = Random.onUnitSphere;
 
             //float rl = Random.Range(minLength, maxLength);
