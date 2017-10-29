@@ -5,7 +5,8 @@ using UnityEngine;
 public class PA_WarriorMove : MonoBehaviour {
 
 	public Transform target;    //targetを代入
-	    public float speed = 3; //移動速度
+	public GameObject explosion; 
+	public float speed = 3; //移動速度
 	    // Use this for initialization
 	    void Start () {
 		      target   = GameObject.FindGameObjectWithTag("Target").transform;
@@ -19,5 +20,14 @@ public class PA_WarriorMove : MonoBehaviour {
 		        transform.position = transform.position + (direction * speed * Time.deltaTime);
 		        transform.LookAt(target);   //プレイヤーの方を向く
 		    }
+
+	void OnTriggerEnter(Collider other)
+	{
+
+		if (other.gameObject.tag == "Target") {
+			Destroy (gameObject);
+			GameObject.Instantiate(explosion, transform.position, Quaternion.identity);
+		}
+	}
 
 }

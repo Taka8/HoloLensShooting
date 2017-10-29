@@ -5,6 +5,9 @@ using UnityEngine;
 public class DroneBullet : MonoBehaviour {
     public float velocity = 10f;
     public float bullet = 10f;
+	public GameObject explosion;    //爆発エフェクト
+	private bool isQuitting = false;
+
     // Use this for initialization
     void Start () {
         GetComponent<Rigidbody>().velocity = transform.forward * velocity;
@@ -14,17 +17,29 @@ public class DroneBullet : MonoBehaviour {
 	void Update () {
 		
 	}
-    void OnTriggerEnter(Collider Player)
+	void OnTriggerEnter(Collider other)
     {
        
-        if (Player.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             //プレイヤーと衝突した時
-            Player.gameObject.SendMessage("Damage", bullet);
-
+            other.gameObject.SendMessage("Damage", bullet);
+			Destroy(gameObject);
         }
+
+		if (other.GetComponent<PlayerBullet>())
+		{
+			Destroy(gameObject);
+		}
+
       
     }
+
+	void OnDestroy () {
+		if(!isQuitting){
+			GameObject.Instantiate(explosion, transform.position, Quaternion.identity);
+		}
+	}
    
 
 }
