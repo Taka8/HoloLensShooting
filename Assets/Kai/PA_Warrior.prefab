@@ -139,7 +139,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4800745333213490}
-  - component: {fileID: 95058327368265512}
+  - component: {fileID: 65709575388497416}
+  - component: {fileID: 114195522840065598}
+  - component: {fileID: 114821121124942994}
+  - component: {fileID: 95875017444809532}
   m_Layer: 0
   m_Name: PA_Warrior
   m_TagString: Enemy
@@ -940,7 +943,19 @@ Transform:
   m_Father: {fileID: 4443520741883562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95058327368265512
+--- !u!65 &65709575388497416
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1213949024893712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95875017444809532
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -949,14 +964,38 @@ Animator:
   m_GameObject: {fileID: 1213949024893712}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 892557bf576062c449897bb0a78f7084, type: 2}
-  m_CullingMode: 1
+  m_Controller: {fileID: 9100000, guid: 793d45e632330f341a74b34241b237fb, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114195522840065598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1213949024893712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d0512aca0887b47aab59b0ddf77139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114821121124942994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1213949024893712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfc16089e52b844b864b15e365f0d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 3
 --- !u!137 &137016945670273462
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

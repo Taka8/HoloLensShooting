@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     private float score = 10f;
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerBullet>())
@@ -11,6 +12,7 @@ public class Enemy : MonoBehaviour {
             Destroy(gameObject);
 			Data data = new Data ();
 			data.AddScore ((int)score);
+           
         }
       
     }

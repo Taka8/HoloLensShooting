@@ -7,7 +7,7 @@ public class player : MonoBehaviour
 {
     public readonly float maxLife = 100;
     public float life = 100;
-
+    
 
     // Use this for initialization
     void Start()
@@ -38,7 +38,7 @@ public class player : MonoBehaviour
     public void GameOver()
     {
         // Application.LoadLevel(Application.loadedLevel); //シーンの再読み込み
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("GameOver");
    
     }
     public bool flag = true;    //trueの時体力を表示させる
