@@ -19,7 +19,7 @@ public class EnemyEmitter : MonoBehaviour
     {
        
 
-                for (int i = 0; i < maxEnemy1; i++)
+               /* for (int i = 0; i < maxEnemy1; i++)
                 {
                     // Vector3 rv = Random.onUnitSphere;
 
@@ -39,7 +39,7 @@ public class EnemyEmitter : MonoBehaviour
                     Vector3 po2 = new Vector3(v, 0, w);
                     Instantiate(enemy2, po2, Quaternion.identity);
                 }
-            
+            */
            
     }
    
