@@ -7,6 +7,7 @@ public class PA_WarriorMove : MonoBehaviour {
 	public Transform target;    //targetを代入
 	public GameObject explosion; 
 	public float speed = 3; //移動速度
+	GameObject refobj;
 	    // Use this for initialization
 	    void Start () {
 		      target   = GameObject.FindGameObjectWithTag("Target").transform;
@@ -23,9 +24,10 @@ public class PA_WarriorMove : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-
+		GameObject p1 = GameObject.FindGameObjectWithTag ("Player");
 		if (other.gameObject.tag == "Target") {
 			Destroy (gameObject);
+			p1.gameObject.SendMessage("Damage", 20.0f);
 			GameObject.Instantiate(explosion, transform.position, Quaternion.identity);
 		}
 	}
