@@ -45,7 +45,6 @@ public class EnemyEmitter : MonoBehaviour
    
     public void Update()
     {
-<<<<<<< HEAD
         timeleft -= Time.deltaTime;
         if (timeleft <= 0.0) {
             timeleft = 20.0f;
@@ -69,9 +68,9 @@ public class EnemyEmitter : MonoBehaviour
                 Vector3 po2 = new Vector3(v, 0, w);
                 Instantiate(enemy2, po2, Quaternion.identity);
             }
-=======
 
     }
+	}
 
     private void OnGUI()
     {
@@ -101,7 +100,6 @@ public class EnemyEmitter : MonoBehaviour
             float w = Random.Range(-25f, 25f);
             Vector3 po2 = new Vector3(v, 0, w);
             Instantiate(enemy2, po2, Quaternion.identity);
->>>>>>> origin/master
 
 
         }

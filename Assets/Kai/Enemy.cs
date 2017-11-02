@@ -6,11 +6,7 @@ public class Enemy : MonoBehaviour {
 	public GameObject explosion;    //爆発エフェクト
 	private bool isQuitting = false;
     private float score = 10f;
-<<<<<<< HEAD
-   
-=======
 
->>>>>>> origin/master
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerBullet>())
