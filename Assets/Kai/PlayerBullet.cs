@@ -16,9 +16,12 @@ public class PlayerBullet : MonoBehaviour
         
     }
 
-    void Update()
+	private void OnTriggerEnter(Collider other)
     {
-        
+		if (other.GetComponent<Enemy>() || other.GetComponent<DroneBullet>())
+		{
+			Destroy(gameObject);
+		}
     }
    
 }

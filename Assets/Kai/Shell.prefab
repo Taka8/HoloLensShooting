@@ -137,3 +137,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 6
   bullet: 10
+  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
