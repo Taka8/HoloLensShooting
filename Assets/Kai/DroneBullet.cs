@@ -24,7 +24,7 @@ public class DroneBullet : MonoBehaviour {
         {
             //プレイヤーと衝突した時
             other.gameObject.SendMessage("Damage", bullet);
-			Destroy(gameObject);
+			Destroy(gameObject); 
         }
 
 		if (other.GetComponent<PlayerBullet>())
