@@ -10,6 +10,7 @@ public class PlayerBullet : MonoBehaviour
 
     void Start()
     {
+
         GetComponent<Rigidbody>().velocity = transform.forward * velocity;
 
         Destroy(gameObject, 10f);

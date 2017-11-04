@@ -8,14 +8,18 @@ public class PlayerShooter : MonoBehaviour
 	//public GameObject Shot;
 	//public GameObject Wave;
 	public GameObject beam;
+	public AudioSource sound;
+	public AudioClip shotSound;
+
+
     void Start()
     {
-
+		sound = this.gameObject.GetComponent<AudioSource>();    //Audio Sourceコンポーネントを代入
     }
 
     void Update()
     {
-		GameObject Bullet;
+		//GameObject Bullet;
        // if (Input.GetKeyDown(KeyCode.Space))
        // {
         //    Instantiate(beam, transform.position, transform.rotation);
@@ -37,6 +41,7 @@ public class PlayerShooter : MonoBehaviour
 
 		 if (Input.GetKeyDown(KeyCode.Space))
 		 {
+			sound.PlayOneShot(shotSound);
 		    Instantiate(beam, transform.position, transform.rotation);
 		}
 

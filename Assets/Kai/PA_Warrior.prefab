@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d0512aca0887b47aab59b0ddf77139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  explosion: {fileID: 1744145442714544, guid: 409481fea14140e41b32ed2a0c1d7d8f, type: 2}
 --- !u!114 &114884206720666476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  explosion: {fileID: 1744145442714544, guid: 409481fea14140e41b32ed2a0c1d7d8f, type: 2}
   speed: 3
 --- !u!137 &137437741600580474
 SkinnedMeshRenderer:
