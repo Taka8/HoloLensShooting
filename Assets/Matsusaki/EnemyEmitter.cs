@@ -55,9 +55,9 @@ public class EnemyEmitter : MonoBehaviour
 
                 //Instantiate(enemy, transform.position + rl * rv, Quaternion.identity);
                 float x = Random.Range(-25f, 25f);
-                float y = Random.Range(5f,7f);
+                float y = Random.Range(2f,4f);
                 float z = Random.Range(-25f, 25f);
-                Vector3 po1 = new Vector3(x, y, z);
+				Vector3 po1 = new Vector3(x, y, z);
                 Instantiate(enemy1, po1, Quaternion.identity);
             }
             for (int b = 0; b < maxEnemy2; b++)
