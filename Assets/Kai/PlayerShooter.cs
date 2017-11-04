@@ -39,8 +39,9 @@ public class PlayerShooter : MonoBehaviour
 
 		}*/
 
-		 if (Input.GetKeyDown(KeyCode.Space))
+		 if (Input.GetButtonDown("Fire1"))
 		 {
+            Debug.Log("shot!");
 			sound.PlayOneShot(shotSound);
 		    Instantiate(beam, transform.position, transform.rotation);
 		}
