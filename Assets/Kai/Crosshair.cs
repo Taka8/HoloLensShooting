@@ -24,6 +24,6 @@ public class Crosshair : MonoBehaviour {
 		//xMin = Screen.width - (Screen.width - Input.mousePosition.x) - (image.width / 2);
 		//yMin = (Screen.height - Input.mousePosition.y) - (image.height / 2);
 		//GUI.DrawTexture (new Rect (xMin, yMin, image.width, image.height), image);
-		GUI.DrawTexture (new Rect (200,185 , 128, 64), image);
+		GUI.DrawTexture (new Rect (660,385, 128, 64), image);
 	}
 }
