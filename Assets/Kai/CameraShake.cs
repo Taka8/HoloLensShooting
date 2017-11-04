@@ -50,7 +50,13 @@ public class CameraShake : MonoBehaviour {
 	{
 		if (other.GetComponent<Enemy>() || other.GetComponent<DroneBullet>())
 		{
+			if (other.GetComponent<PA_WarriorMove>())
+			{
+				Invoke("CatchShake",0.7f);
+			}
+			else{
 			CatchShake();
+			}
 		}
 	}
 }
