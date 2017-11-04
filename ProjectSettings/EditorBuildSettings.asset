@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Matsusaki/main.unity
     guid: 10114136d3e8f3d4f8fef00c156e52ad
+  - enabled: 0
+    path: Assets/Clear.unity
+    guid: c75dbdbeb2065fc4b934abf4c418b2c1
