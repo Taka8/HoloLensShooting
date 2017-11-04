@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 	public GameObject explosion;    //爆発エフェクト
 	private bool isQuitting = false;
-    private float score = 10f;
+    private static float score = 10f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +18,9 @@ public class Enemy : MonoBehaviour {
         }
       
     }
-
+    void OnApplicationQuit() {
+        isQuitting = true;
+    }
 	void OnDestroy () {
 		        if(!isQuitting){
 			            GameObject.Instantiate(explosion, transform.position, Quaternion.identity);

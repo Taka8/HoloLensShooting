@@ -6,7 +6,7 @@ public class DroneBullet : MonoBehaviour {
     public float velocity = 10f;
     public float bullet = 10f;
 	public GameObject explosion;    //爆発エフェクト
-	private bool isQuitting = false;
+	private  static bool  isQuitting = false;
 
     // Use this for initialization
     void Start () {
@@ -33,6 +33,9 @@ public class DroneBullet : MonoBehaviour {
 		}
 
       
+    }
+    void OnApplicationQuit() {
+        isQuitting = true;
     }
 
 	void OnDestroy () {

@@ -9,7 +9,6 @@ public class EnemyEmitter : MonoBehaviour
     //public float maxLength = 15f;
     public float maxEnemy1 = 10;
     public float maxEnemy2 = 3;
-    public int count = 13;
     public Enemy enemy1;
     public Enemy enemy2;
     private float time = 60;
@@ -56,7 +55,7 @@ public class EnemyEmitter : MonoBehaviour
 
                 //Instantiate(enemy, transform.position + rl * rv, Quaternion.identity);
                 float x = Random.Range(-25f, 25f);
-                float y = Random.Range(5f, 7f);
+                float y = Random.Range(5f, 100f);
                 float z = Random.Range(-25f, 25f);
                 Vector3 po1 = new Vector3(x, y, z);
                 Instantiate(enemy1, po1, Quaternion.identity);
@@ -72,13 +71,7 @@ public class EnemyEmitter : MonoBehaviour
     }
 	}
 
-    private void OnGUI()
-    {
-        if (GUILayout.Button("Start"))
-        {
-            EmitEnemies();
-        }
-    }
+   
 
     void EmitEnemies()
     {
