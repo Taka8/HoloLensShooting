@@ -14,7 +14,8 @@ public class CameraShake : MonoBehaviour {
 	private float maxRangeY;
 
 	void CatchShake() {
-		savePosition = GameObject.Find ("Main Camera").transform.position;
+		//savePosition = GameObject.Find ("Main Camera").transform.position;
+		savePosition =new Vector3 (0f,1.5f,0f);
 		lowRangeY = savePosition.y - 1.0f;
 		maxRangeY = savePosition.y + 1.0f;
 		lowRangeX = savePosition.x - 1.0f;
