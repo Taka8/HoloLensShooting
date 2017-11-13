@@ -20,4 +20,5 @@ public class Data : MonoBehaviour {
 
         text.text = "Score:" + Data.Instance.score;
     }
+   
 }

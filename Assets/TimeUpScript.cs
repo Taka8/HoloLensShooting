@@ -12,15 +12,13 @@ public class TimeUpScript : MonoBehaviour
     // Use this for initialization
     public void Start()
     {
-        GetComponent<Text>().text = "TIME UP".ToString();
-        this.gameObject.GetComponent<Text>().enabled = false;
+       
 
 
     }
-    public void ReLoad()
-    {
-        SceneManager.LoadScene("shooting");
-    }
+   
+       
+   
     // Update is called once per frame
     public void Update()
     {
@@ -28,10 +26,11 @@ public class TimeUpScript : MonoBehaviour
         if (time < 0)
         {
             Debug.Log(name + " update.");
-            this.gameObject.GetComponent<Text>().enabled = true;
-            
             time = 0;
-            Time.timeScale = 0;
+            Enemy enemy = GetComponent<Enemy>();
+            DroneBullet dronebullet = GetComponent<DroneBullet>();
+            SceneManager.LoadScene("Clear");
+
 
         }
     }

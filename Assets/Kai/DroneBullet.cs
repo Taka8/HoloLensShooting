@@ -15,7 +15,7 @@ public class DroneBullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Invoke("Stop", 60f);
 	}
 	void OnTriggerEnter(Collider other)
     {
@@ -44,5 +44,4 @@ public class DroneBullet : MonoBehaviour {
 		}
 	}
    
-
 }

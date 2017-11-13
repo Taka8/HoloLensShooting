@@ -6,7 +6,10 @@ public class Enemy : MonoBehaviour {
 	public GameObject explosion;    //爆発エフェクト
 	private bool isQuitting = false;
     private static float score = 10f;
-
+    void Update()
+    {
+        Invoke("Stop", 60f);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerBullet>())
@@ -26,6 +29,7 @@ public class Enemy : MonoBehaviour {
 			            GameObject.Instantiate(explosion, transform.position, Quaternion.identity);
 			        }
 		    }
+   
 
 }
 

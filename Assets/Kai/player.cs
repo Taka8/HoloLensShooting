@@ -25,7 +25,9 @@ public class player : MonoBehaviour
     }
     public void Damage(float damage)
     {
-        life -= damage; //体力を減らす
+        life -= damage;
+       
+        //体力を減らす
     }
 
     //死亡処理（死亡時の演出）
