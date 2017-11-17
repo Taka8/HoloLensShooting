@@ -1,23 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+
 
 public class player : MonoBehaviour
 {
     public readonly float maxLife = 100;
     public float life = 100;
-    
+  
 
     // Use this for initialization
     void Start()
     {
+       
         life = maxLife;
     }
 
     // Update is called once per frame
     void Update()
     {
+      
         if (life <= 0)
         {
             Dead();

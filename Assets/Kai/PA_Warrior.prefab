@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 114788394759014126}
   - component: {fileID: 114884206720666476}
   - component: {fileID: 54413948670352492}
-  - component: {fileID: 65490116201370068}
+  - component: {fileID: 65821065665902446}
   m_Layer: 0
   m_Name: PA_Warrior
   m_TagString: Enemy
@@ -960,7 +960,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65490116201370068
+--- !u!65 &65821065665902446
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -970,8 +970,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.5, z: 1}
-  m_Center: {x: 0, y: 0.2, z: -0.2}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95294246921772054
 Animator:
   serializedVersion: 3
